@@ -44,7 +44,9 @@ END LICENSE CODE
 
 use tlm\TlmClass;
 
-TlmClass::DebugView();
+if ($hesk_settings['debug_mode']) :
+	TlmClass::DebugView();
+endif;
 ?>
 </main> <!-- End main -->
 <?php
@@ -78,6 +80,8 @@ if (defined('CALENDAR')) {
 	</script>
 <?php
 }
+?>
+<?php TlmClass::GetFooter();
 ?>
 <script type="text/javascript" src="<?php echo HESK_PATH; ?>js/app<?php echo $hesk_settings['debug_mode'] ? '' : '.min'; ?>.js"></script>
 <?php

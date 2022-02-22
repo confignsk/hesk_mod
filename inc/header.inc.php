@@ -209,7 +209,10 @@ $onload = '';
     <?php if ($hesk_settings['admin_css']) : ?>
         <link rel="stylesheet" href="<?php echo $hesk_settings['admin_css_url']; ?>">
     <?php endif; ?>
+    <?php
 
+    use tlm\TlmClass; ?>
+    <?php TlmClass::GetHead(); ?>
 </head>
 
 <body onload="<?php echo $onload;

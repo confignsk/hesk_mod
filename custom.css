@@ -1,3 +1,31 @@
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-thumbnail {
+    padding: 0.25rem;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.figure {
+    display: inline-block;
+}
+
+.figure-img {
+    margin-bottom: 0.5rem;
+    line-height: 1;
+}
+
+.figure-caption {
+    font-size: 0.875em;
+    color: #6c757d;
+}
+
 .browser-default blockquote {
     border-left: 2px solid #ccc !important;
     border-left-width: 2px !important;
@@ -40,4 +68,28 @@ div.menu ul>li {
 
         display: none;
     }
+
+    .btn-empty {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+.cd-attach-gallery .img-thumbnail {
+    height: 100px;
+}
+
+.btn {
+    width: auto !important;
+
+}
+
+.row div {
+
+    width: auto !important;
+}
+
+#submit-as-div .label span {
+    padding-left: 5px;
+    padding-right: 5px;
 }

@@ -79,7 +79,15 @@ hesk_getLanguage();
 // Set timezone
 hesk_setTimezone();
 
+/* Подключаем tlmmod */
 require_once HESK_PATH . "inc/tlm_mod/tlmclass.php";
+
+use tlm\TlmClass;
+
+TlmClass::AddHeadCss('https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css');
+TlmClass::AddCustomJs("https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js", Y);
+TlmClass::AddHeadCss(TlmClass::MOD_PATH . "/bootstrap/bootstrap-grid.css");
+TlmClass::AddHeadCss(TlmClass::MOD_PATH . "/bootstrap/bootstrap-utilities.css");
 
 /*** FUNCTIONS ***/
 
